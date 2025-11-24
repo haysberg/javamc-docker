@@ -40,3 +40,10 @@ jobs:
           push: true
           file: ./jre21.Dockerfile
           tags: ghcr.io/haysberg/javamc-docker:java21
+
+      - name: Build and push JRE 25
+        uses: docker/build-push-action@v6
+        with:
+          push: true
+          file: ./jre25.Dockerfile
+          tags: ghcr.io/haysberg/javamc-docker:java25
