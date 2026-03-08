@@ -28,21 +28,21 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push JRE 17
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           push: true
           file: ./jre17.Dockerfile
           tags: ghcr.io/haysberg/javamc-docker:java17
       
       - name: Build and push JRE 21
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           push: true
           file: ./jre21.Dockerfile
           tags: ghcr.io/haysberg/javamc-docker:java21
 
       - name: Build and push JRE 25
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           push: true
           file: ./jre25.Dockerfile
